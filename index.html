@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .one h1 {
+            display: inline-block;
+            color: #141313;
+            background-color: #f4f4f4;
+            text-align: center;
+            border: solid 1px white;
+            box-shadow: 20px 20px 50px #f0eaea;
+            margin: 3px;
+            align-items: center;
+            border-radius: 17px;
+            padding: 6px;
+            font-size: large;
+            font-style: bold;
+            font-family: 'helvetica', 'Arial', sans-serif;
+        }
+
+        .First h2 {
+            text-align: start;
+            color: blue;
+            margin-left: 20px;
+            position: relative;
+            bottom: 20px;
+
+        }
+
+        .Second h1 {
+            display: inline;
+            color: #0f0e0e;
+            font-size: large;
+            padding: 30px;
+            position: relative;
+            left: 80px;
+            bottom: 60px;
+            cursor: pointer;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .Third {
+            display: flex;
+            justify-content: flex-end;
+
+
+        }
+
+        .Third button {
+            background-color: blue;
+            border-radius: 15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: x-large;
+            position: relative;
+            right: 60px;
+            bottom: 90px;
+            color: white;
+            cursor: pointer;
+        }
+
+        hr {
+            border: 1px solid black;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .Fourth img {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+            position: relative;
+            bottom: 70px;
+
+        }
+
+        .Fourth h1 {
+            position: absolute;
+            bottom: 170px;
+            left: 70px;
+            color: white;
+            font-weight: bold;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        }
+
+        .fourth h1 {
+            position: absolute;
+            bottom: 130px;
+            left: 70px;
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+
+        }
+
+        .fourth p {
+            position: absolute;
+            bottom: 90px;
+            left: 70px;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .fourth1 p {
+            position: absolute;
+            bottom: 70px;
+            left: 80px;
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            padding-right: 23px;
+            font-size: 18px;
+        }
+
+        .B1 {
+            background-color: blue;
+            border-radius: 15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: large;
+            color: white;
+            cursor: pointer;
+            position: absolute;
+            bottom: 30px;
+            left: 80px;
+            padding: 8px;
+
+        }
+
+        .B2 {
+            border-radius: 15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: large;
+            color: rgb(9, 9, 9);
+            cursor: pointer;
+            position: absolute;
+            bottom: 30px;
+            left: 250px;
+            padding: 8px;
+        }
+
+        .sub1 {
+            display: flex;
+            align-items: center;
+            background: #fff;
+            padding: 10px 20px;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin: 20px auto;
+        }
+
+        .item {
+            flex: 1;
+            padding: 0 15px;
+            border-right: 1px solid #eee;
+        }
+
+        .item:last-of-type {
+            border-right: none;
+        }
+
+        .item label {
+            display: block;
+            font-size: 12px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 4px;
+        }
+
+        .item input {
+            border: none;
+            outline: none;
+            font-size: 14px;
+            width: 100%;
+        }
+
+        .sub1 button {
+            background: #003580;
+            /* Deep blue from image */
+            color: white;
+            border: 1px;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="one">
+        <h1>HOME PAGE</h1>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="First">
+            <h2>✈️ Wanderly</h2>
+        </div>
+        <div class="Second">
+            <h1>Home</h1>
+            <h1>About</h1>
+            <h1>Explore</h1>
+            <h1>Contact</h1>
+        </div>
+        <div class="Third">
+            <button>Login</button>
+        </div>
+        <div class="Fourth">
+            <img src="Cool wallpaper.jpg" alt="Wanderly Image">
+            <h1>Explore The</h1>
+            <div class="fourth">
+                <h1>Beauty of The World</h1>
+                <p>Discover amazing places at exclusive deals</p>
+                <div class="fourth1">
+                    <p>and make your journey unforgettable!</p>
+                </div>
+            </div>
+            <div class="fourth2">
+                <button class="B1">Explore Now</button>
+                <button class="B2">Learn More</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="sub1">
+        <div class="item">
+            <label><span class="icon">📍</span>Location</label>
+            <input type="checkbox" placeholder="where are you going?">
+        </div>
+        <div class="item">
+            <label><span class="icon">📅</span>Check-in</label>
+            <input type="checkbox" placeholder="Add dates">
+        </div>
+        <div class="item">
+            <label><span class="icon">📅</span>Check-out</label>
+            <input type="checkbox" placeholder="Add dates">
+        </div>
+        <div class="item">
+            <label><span class="icon">👤</span>Guests</label>
+            <input type="checkbox" placeholder="Add guests">
+        </div>
+        <button>Search</button>
+    </div>
+    </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
