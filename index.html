@@ -161,11 +161,16 @@
             display: flex;
             align-items: center;
             background: #fff;
-            padding: 10px 20px;
+            padding: 40px;
             border-radius: 50px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             max-width: 900px;
             margin: 20px auto;
+            position: absolute;
+            top: 120%;
+            left: 10%;
+            width: 90%;
+            right: 10%;
         }
 
         .item {
@@ -174,9 +179,7 @@
             border-right: 1px solid #eee;
         }
 
-        .item:last-of-type {
-            border-right: none;
-        }
+
 
         .item label {
             display: block;
@@ -203,6 +206,64 @@
             font-weight: bold;
             cursor: pointer;
             margin-left: 10px;
+        }
+
+        .fifth {
+            font-size: 30px;
+            color: #060505;
+            text-align: start;
+        }
+
+        .photos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+
+        .photos img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            align-items: center;
+            padding: 2px;
+            border-radius: 20px;
+            
+
+        }
+        .p1, .p2, .p3, .p4 {
+            border: 5px solid #f4f4f4;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .p1 h4,h5, .p2 h4,h5, .p3 h4,h5, .p4 h4,h5 {
+           text-align: start;
+        }
+
+        .B3 {
+            background-color: none;
+            border-radius: 15px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: none;
+            color: rgb(30, 8, 168);
+            cursor: pointer;
+            position: relative;
+            bottom: 50vh;
+            left: 40%;
+            padding: 0px;
+            border: none;
+            font-weight: bold;
+            text-decoration: none;
+
+        }
+
+        .B1:hover,
+        .B2:hover,
+        .B3:hover {
+            text-align: underline;
+
         }
     </style>
 </head>
@@ -262,6 +323,32 @@
         </div>
         <button>Search</button>
     </div>
+    <h1 class="fifth">Popular Destinations</h1>
+    <br><br>
+    <div class="photos">
+        <div class="p1">
+            <img src="https://tse4.mm.bing.net/th/id/OIP._iyCEXs-tJ5bAOSpTNJXAgHaE8?pid=Api&h=220&P=0" alt="image1">
+            <h4>Paris, France</h4>
+            <h5>From $999</h5>
+        </div>
+        <div class="p2">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.MLDySxD7IQprRsG3XhsRNQHaEK?pid=Api&h=220&P=0" alt="image2">
+            <h4>Tokyo, Japan</h4>
+            <h5>From $1,299</h5>
+        </div>
+        <div class="p3">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.FK4HlrTvzprQGNNB4klGQwHaE8?pid=Api&h=220&P=0" alt="image3">
+            <h4>New York, USA</h4>
+            <h5>From $1,499</h5>
+        </div>
+        <div class="p4">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.XqEeXG8EwP4rD9GO1wGEIQHaE8?pid=Api&h=220&P=0" alt="image4">
+            <h4>London, UK</h4>
+            <h5>From $1,199</h5>
+        </div>
+    </div>
+    <button class="B3">View More</button>
+
     </div>
     </div>
     </div>
