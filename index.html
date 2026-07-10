@@ -398,7 +398,7 @@
             background-color: #182e77;
             transform: translateY(-2px);
         }
-        
+
         .S1 input {
             width: 10vw;
             height: 5vh;
@@ -701,7 +701,10 @@
 
         .K3 {
             padding-top: 5vh;
-            padding-left: vw;
+            padding-right: 10vw;
+            position: relative;
+            right: 35vw;
+            text-align: center;
         }
 
         .K1 {
@@ -719,7 +722,8 @@
             position: relative;
             right: 5vw;
         }
-        .Final12{
+
+        .Final12 {
             position: relative;
             bottom: 140vh;
             left: 40vw;
@@ -732,30 +736,59 @@
             background-color: #ffffff;
             color: #060505;
         }
-        .Final12 h4{
+
+        .Final12 h4 {
             text-align: start;
             padding-left: 2vw;
         }
-        .Final12 input{
+
+        .Final12 input {
             text-align: start;
             width: 30vw;
             height: 5vh;
             padding-left: 12vw;
             border-radius: 7px;
         }
-        .text{
+
+        .text {
             height: 10vh;
         }
-        .Final12 button{
+
+        .Final12 button {
             padding: 15px;
             margin-top: 10px;
             border-radius: 4px;
             background-color: #2D54C1;
-            color: #f0eaea; 
+            color: #f0eaea;
         }
-        .F1 input{
+
+        .F1 input {
             align-items: start;
             height: 100px;
+        }
+
+        .contact-socials {
+            display: flex;
+            gap: 12px;
+            margin-top: 20px;
+            padding-right: 180px;
+        }
+
+        .contact-socials a {
+            width: 36px;
+            height: 36px;
+            background: blue;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: whitesmoke;
+            font-size: 0.85rem;
+         
+        }
+
+        .contact-socials a:hover {
+            background: hsl(224, 100%, 44%);
         }
     </style>
 </head>
@@ -921,17 +954,17 @@
             <div class="q5">
                 <img src="https://wallpapers.com/images/hd/beautiful-travel-1920-x-1080-wallpaper-tbe9ktnmeotnxxnw.jpg"
                     alt="image1">
-                <h4>Paris, France</h4>
+                <h4>Mubai</h4>
                 <h5>From $999</h5>
             </div>
             <div class="q6">
                 <img src="https://tse3.mm.bing.net/th/id/OIP.MLDySxD7IQprRsG3XhsRNQHaEK?pid=Api&h=220&P=0" alt="image2">
-                <h4>Tokyo, Japan</h4>
+                <h4>Channi</h4>
                 <h5>From $1,299</h5>
             </div>
             <div class="q7">
                 <img src="https://tse4.mm.bing.net/th/id/OIP.FK4HlrTvzprQGNNB4klGQwHaE8?pid=Api&h=220&P=0" alt="image3">
-                <h4>New York, USA</h4>
+                <h4>Namakkal</h4>
                 <h5>From $1,499</h5>
             </div>
             <div class="q8">
@@ -972,11 +1005,11 @@
         <hr class="H0">
         <span class="plane0">✈️</span>
         <p class="K1">Have Question or need assistance?<br>We're here to help.</p>
-        <h5 class="K3">Email</h5>
+        <h5 class="K3"><icon>📩</icon>Email</h5>
         <p class="K2">123@gmail.com</p>
-        <h5 class="K3">Phone</h5>
+        <h5 class="K3"><icon>📞</icon>Phone</h5>
         <p class="K2">+1234567890</p>
-        <h5 class="K3">Address</h5>
+        <h5 class="K3"><icon>📢</icon>Address</h5>
         <p class="K2">162,AnnaNagar,Kadathur city,Channi(Dt),<br>Pin code 600 001</p>
         <h5> Follow us</h5>
 
@@ -989,8 +1022,8 @@
         <h4>Subject</h4>
         <input type="text" placeholder="Enter Subject">
         <span class="F1">
-        <h4>Message</h4>
-        <input  type="text" placeholder="Write your Message">
+            <h4>Message</h4>
+            <input type="text" placeholder="Write your Message">
         </span>
         <button>Send Message</button>
     </div>
@@ -999,10 +1032,12 @@
             <h3>Wanderly</h3>
             <p>let's make your next yourney your<br> best adventure Yet.. </p>
             <div class="social">
-                <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa1"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fa1"></i></a>
-                <a href="#" aria-label="Twitter"><i class="fa1"></i></a>
-                <a href="#" aria-label="Youtube"><i class="fa1"></i></a>
+                <div class="contact-socials">
+                    <a href="#" title="Facebook">f</a>
+                    <a href="#" title="Instagram">in</a>
+                    <a href="#" title="Twitter">tw</a>
+                    <a href="#" title="LinkedIn">li</a>
+                </div>
             </div>
         </div>
         <div class="D2">
@@ -1115,7 +1150,7 @@
             btn.addEventListener('click', () => {
                 filterButtons.forEach(b => b.classList.remove('active-filter'));
                 btn.classList.add('active-filter');
-                
+
                 destinationCards.forEach(card => card.style.display = 'block');
             });
         });
@@ -1184,4 +1219,5 @@
 
     });
 </script>
+
 </html>
