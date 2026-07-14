@@ -802,3 +802,322 @@
         .contact-socials a:hover {
             background: hsl(224, 100%, 44%);
         }
+         @media screen and (max-width: 1024px) {
+            .sub1 {
+                width: 95%;
+                padding: 25px;
+                flex-wrap: wrap;
+                border-radius: 30px;
+            }
+ 
+            .item {
+                flex: 1 1 45%;
+                border-right: none;
+                margin-bottom: 10px;
+            }
+ 
+            .about img {
+                width: 400px;
+                height: 280px;
+                left: 30%;
+            }
+ 
+            .Final12 {
+                width: 70vw;
+                left: 20vw;
+            }
+ 
+            .Final12 input {
+                width: 40vw;
+                padding-left: 8vw;
+            }
+ 
+            .login1 {
+                width: 55vw;
+                left: 40vw;
+            }
+        }
+ 
+        /* Tablets / large phones (landscape) */
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+ 
+            .one h1 {
+                font-size: medium;
+            }
+ 
+            .First h2 {
+                margin-left: 10px;
+                bottom: 10px;
+            }
+ 
+            .Second button,
+            .E2 button {
+                left: 0;
+                bottom: 0;
+                padding: 15px;
+            }
+ 
+            .container {
+                flex-direction: column;
+            }
+ 
+            .Third {
+                justify-content: center;
+            }
+ 
+            .Third button {
+                right: 0;
+                bottom: 10px;
+                font-size: large;
+            }
+ 
+            .Fourth img {
+                bottom: 60px;
+            }
+ 
+            .Fourth h1,
+            .fourth h1 {
+                left: 20px;
+                bottom: 100px;
+                font-size: 22px;
+            }
+ 
+            .fourth p,
+            .fourth1 p {
+                left: 20px;
+                bottom: 60px;
+                font-size: 15px;
+            }
+ 
+            .B1,
+            .B2 {
+                position: static;
+                display: inline-block;
+                margin: 10px 5px;
+            }
+ 
+            .sub1 {
+                flex-direction: column;
+                top: 0;
+                left: 0;
+                right: 0;
+                position: relative;
+                width: 100%;
+                margin: 20px 0;
+            }
+ 
+            .item {
+                flex: 1 1 100%;
+                margin-bottom: 15px;
+                text-align: center;
+            }
+ 
+            .photos img,
+            .photos1 img,
+            .photos3 img {
+                width: 140px;
+                height: 140px;
+            }
+ 
+            .photos1 div,
+            .photos3 div {
+                width: 45%;
+                flex-basis: 45%;
+            }
+ 
+            .B3 {
+                bottom: 20px;
+                left: 30%;
+                position: relative;
+            }
+ 
+            .about img {
+                width: 90%;
+                height: auto;
+                position: relative;
+                left: 0;
+                bottom: 0;
+            }
+ 
+            .plane,
+            .plane0,
+            .plane00 {
+                left: 0;
+            }
+ 
+            .A1,
+            .H2,
+            .sub2 {
+                bottom: 10px;
+            }
+ 
+            .sub2 {
+                flex-direction: column;
+                align-items: center;
+            }
+ 
+            .sub2 .item1 {
+                width: 90%;
+                margin-bottom: 15px;
+            }
+ 
+            .footer {
+                bottom: 20px;
+                height: auto;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 20px 0;
+            }
+ 
+            .D1 {
+                text-align: center;
+                padding-left: 0;
+            }
+ 
+            .S1 input,
+            .s {
+                bottom: 0;
+                left: 0;
+                width: 60vw;
+                margin: 10px 0;
+            }
+ 
+            .A2,
+            .S2 {
+                bottom: 20px;
+            }
+ 
+            .E1,
+            .Contact {
+                bottom: 20px;
+            }
+ 
+            .Contact p {
+                padding-left: 0;
+            }
+ 
+            .K3,
+            .K1,
+            .K4 {
+                right: 0;
+                text-align: center;
+            }
+ 
+            .login img {
+                top: 5vh;
+            }
+ 
+            .login h1,
+            .login p {
+                bottom: 0;
+                right: 0;
+                text-align: center;
+            }
+ 
+            .login1 {
+                position: relative;
+                bottom: 20px;
+                left: 0;
+                width: 90vw;
+                height: auto;
+                padding-bottom: 20px;
+                margin: 0 auto;
+            }
+ 
+            .login1 input {
+                right: 0;
+                width: 80%;
+                padding-right: 20px;
+            }
+ 
+            .Final12 {
+                position: relative;
+                bottom: 20px;
+                left: 0;
+                width: 90vw;
+                height: auto;
+                margin: 20px auto;
+                padding-bottom: 20px;
+            }
+ 
+            .Final12 input {
+                width: 70vw;
+                padding-left: 5vw;
+            }
+ 
+            .contact-socials {
+                padding-right: 0;
+                justify-content: center;
+            }
+        }
+ 
+        /* Small phones */
+        @media screen and (max-width: 480px) {
+            .one h1 {
+                font-size: small;
+                padding: 4px;
+            }
+ 
+            .Third button {
+                font-size: medium;
+                padding: 10px;
+            }
+ 
+            .fourth h1,
+            .Fourth h1 {
+                font-size: 18px;
+                left: 10px;
+            }
+ 
+            .fourth p,
+            .fourth1 p {
+                font-size: 13px;
+                left: 10px;
+            }
+ 
+            .photos img,
+            .photos1 img,
+            .photos3 img {
+                width: 100px;
+                height: 100px;
+            }
+ 
+            .photos1 div,
+            .photos3 div {
+                width: 100%;
+                flex-basis: 100%;
+            }
+ 
+            .B1,
+            .B2,
+            .B3 {
+                font-size: 14px;
+                padding: 6px;
+            }
+ 
+            .sub1 {
+                padding: 15px;
+                border-radius: 15px;
+            }
+ 
+            .S1 input,
+            .s {
+                width: 80vw;
+            }
+ 
+            .login1 input,
+            .Final12 input {
+                width: 90%;
+                padding-left: 10px;
+            }
+ 
+            .login1 button,
+            .Final12 button {
+                padding-left: 5vw;
+                padding-right: 5vw;
+            }
+        }
