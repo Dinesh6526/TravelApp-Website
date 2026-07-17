@@ -1121,3 +1121,90 @@
                 padding-right: 5vw;
             }
         }
+
+        /* Mobile-first breakpoint variables and min-width media queries (added) */
+        :root {
+            --bp-xs: 320px;
+            --bp-sm: 480px;
+            --bp-md: 768px;
+            --bp-lg: 1024px;
+            --bp-xl: 1440px;
+        }
+
+        /* Small phones and up */
+        @media (min-width: 320px) {
+            /* base: nothing changes, but kept for reference */
+        }
+
+        /* Small phones / large mobile */
+        @media (min-width: 480px) {
+            .photos img,
+            .photos1 img,
+            .photos3 img {
+                width: 120px;
+                height: 120px;
+            }
+
+            .sub1 {
+                max-width: 920px;
+                padding: 20px;
+            }
+        }
+
+        /* Tablets and up */
+        @media (min-width: 768px) {
+            body {
+                padding: 16px;
+            }
+
+            .container {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+
+            .sub1 {
+                position: absolute;
+                top: 110%;
+                left: 10%;
+                width: 80%;
+            }
+
+            .login1 {
+                width: 35vw;
+                left: 60vw;
+            }
+        }
+
+        /* Desktop and up */
+        @media (min-width: 1024px) {
+            .photos img,
+            .photos1 img,
+            .photos3 img {
+                width: 200px;
+                height: 200px;
+            }
+
+            .about img {
+                width: 550px;
+                height: 350px;
+            }
+
+            .sub2 .item1 {
+                width: 20%;
+            }
+        }
+
+        /* Large desktops */
+        @media (min-width: 1440px) {
+            .about img {
+                width: 650px;
+                height: 420px;
+            }
+
+            .photos img,
+            .photos1 img,
+            .photos3 img {
+                width: 220px;
+                height: 220px;
+            }
+        }
